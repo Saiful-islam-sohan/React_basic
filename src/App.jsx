@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import New from './new'
 import Count from './Count'
+import ExternalUser from './ExternalUser'
 
 
 
@@ -35,9 +36,13 @@ function App() {
               //  <Count />
               //  </>
 
+              // <div>
+              //        {/* <New /> */}
+              //        <Count />
+              // </div>
+
               <div>
-                     {/* <New /> */}
-                     <Count />
+                     <ExternalUser />
               </div>
 
                 
