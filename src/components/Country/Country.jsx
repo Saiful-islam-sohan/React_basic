@@ -1,11 +1,18 @@
-
+import './country.css'
 
 const Country = (props) => {
+    console.log(props)
+    const {population,area,flags} = props.country;
     return (
-        <div>
-            <p>name:{props.name}</p>
-            <p>population:{props.population}</p>
-            <img src="{props.map}" alt="" />
+        <div className="country">
+            
+            <p>name:{props.country.name.common}</p>
+
+            <p>area:{area}</p>
+
+            <p>population:{population}</p>
+
+            <img src={flags.png} alt="" />
             
         </div>
     );
