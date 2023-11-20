@@ -3,6 +3,16 @@ import './country.css'
 const Country = (props) => {
     console.log(props)
     const {population,area,flags} = props.country;
+
+    const addTocart = (area)=>{
+
+        console.log(area)
+       
+
+    }
+
+             
+       
     return (
         <div className="country">
             
@@ -12,7 +22,9 @@ const Country = (props) => {
 
             <p>population:{population}</p>
 
-            <img src={flags.png} alt="" />
+            {/* <img src={flags.png} alt="" /> */}
+
+            <button  onClick={()=>addTocart(area)}>Add to Cart</button>
             
         </div>
     );
