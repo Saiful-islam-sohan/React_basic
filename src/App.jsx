@@ -1,7 +1,7 @@
 
-import './App.css'
-import Cosmetic from './components/Cosmetics/Cosmetic';
-import Countries from './components/Countries/Countries';
+import Header from './components/Header/Header';
+import Shop from './components/Shop/Shop';
+
 
 
 
@@ -9,9 +9,8 @@ import Countries from './components/Countries/Countries';
 const App = () => {
        return (
               <div>
-                     <Countries/>
-                     <Cosmetic/>
-
+                    <Header />
+                    <Shop/>
                      
               </div>
        );
